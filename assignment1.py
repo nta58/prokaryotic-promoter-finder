@@ -19,6 +19,14 @@ Flow of the code:
 7. Reports motif positions and match scores to provide a clear visualization
    of potential promoter regions.
 
+Variables defined:
+- `motifs`: List of common promoter motifs to search for.
+- `text`: Path to the text file containing the DNA sequence.
+- `dna_sequence`: The DNA sequence read from the file.
+- `exact_positions`: List of positions where exact motif matches are found.
+- `mismatch_positions`: List of tuples containing positions and mismatch counts for near matches.
+- `match_scores`: Dictionary mapping positions to match scores for near matches.
+
 This program combines biological knowledge of promoter sequences with
 computational string analysis to support motif detection and sequence
 interpretation.
