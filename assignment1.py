@@ -74,20 +74,20 @@ def is_dna_sequence(dna_seq):
     This function calculates the number of mismatched nucleotides between two motifs.
 
     Parameters:
-        seq1 (str): common motif.
-        seq2 (str): Second motif extracted from DNA sequence.
+        sequence1 (str): common motif.
+        sequence2 (str): Second motif extracted from DNA sequence.
     Returns:
         int: Number of positions where nucleotides differ.
 """
-def calculate_mismatches(seq1, seq2):
+def calculate_mismatches(sequence1, sequence2):
     #return error if the lengths of the two motifs are not equal
-    if len(seq1) != len(seq2):
+    if len(sequence1) != len(sequence2):
         print("Strings must be the same length.")
 
     #set total mismatches to 0 and loop through the sequences to count mismatches
     total = 0
     #zip function is used to pair up the nucleotides from both sequencces
-    for a, b in zip(seq1, seq2):
+    for a, b in zip(sequence1, sequence2):
         #if the nucleotides are different, increment the mismatch count
         if a != b:
             total += 1
